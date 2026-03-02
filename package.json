@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "node -e \"const fs=require('fs');const dir='.cursor';fs.mkdirSync(dir,{recursive:true});fs.appendFileSync(dir+'/debug-d59c64.log',JSON.stringify({sessionId:'d59c64',timestamp:Date.now(),location:'package.json:dev',message:'npm run dev CWD',hypothesisId:'A',data:{cwd:process.cwd(),argv:process.argv}})+String.fromCharCode(10))\" && next dev --webpack",
+    "dev": "next dev --webpack",
     "build": "next build --webpack",
     "start": "next start",
     "lint": "next lint"
