@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useState } from "react";
 
 type Project = {
@@ -112,41 +113,40 @@ export default function Home() {
       </header>
 
       <main>
-        <section className="section hero" aria-labelledby="hero-title">
-          <div className="hero-content">
-            <h1 id="hero-title" className="hero-title">
-              Aspiring UX Designer Crafting Thoughtful Digital Experiences
-            </h1>
-            <p className="hero-copy">
-              I design intuitive interfaces that balance clarity, emotion, and function. Through user research,
-              wireframing, and rapid iteration, I turn complex problems into meaningful digital moments.
-            </p>
-            <div className="cta-row">
-              <a href="#projects" className="btn btn-accent">
-                View My Work
-              </a>
-              <a href="#contact" className="btn btn-ghost">
-                Let&apos;s Connect
-              </a>
-              <a href="#contact" className="btn btn-ghost">
-                Download Resume
-              </a>
-            </div>
-          </div>
-
-          <div className="hero-card" aria-hidden>
-            <span className="hero-bubble hero-bubble-lg" />
-            <span className="hero-bubble hero-bubble-sm" />
-            <div className="hero-card-inner">
-              <div className="hero-chip">Prototype</div>
-              <div className="hero-lines">
-                <span />
-                <span />
-                <span />
+        <section className="hero-shell" aria-labelledby="hero-title">
+          <div className="section hero-inner">
+            <div className="hero-row">
+              <div className="hero-content">
+                <p className="hero-eyebrow">PRODUCT DESIGNER</p>
+                <p className="hero-label">UX PORTFOLIO</p>
+                <h1 id="hero-title" className="hero-title">
+                  Aspiring UX Designer Crafting Thoughtful Digital Experiences
+                </h1>
+                <p className="hero-copy">
+                  I design intuitive interfaces that balance clarity, emotion, and function. Through user research,
+                  wireframing, and rapid iteration, I turn complex problems into meaningful digital moments.
+                </p>
+                <div className="cta-row">
+                  <a href="#projects" className="btn btn-accent">
+                    View My Work
+                  </a>
+                  <a href="#contact" className="btn btn-ghost">
+                    Let&apos;s Connect
+                  </a>
+                  <a href="#contact" className="btn btn-ghost">
+                    Download Resume
+                  </a>
+                </div>
               </div>
-              <div className="hero-panels">
-                <div />
-                <div />
+
+              <div className="hero-media">
+                <Image
+                  src="/image.png"
+                  alt="Portrait of Mina Nord"
+                  fill
+                  priority
+                  sizes="(max-width: 1080px) 100vw, 520px"
+                />
               </div>
             </div>
           </div>
