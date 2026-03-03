@@ -1,0 +1,43 @@
+.contactGap {
+  padding-bottom: 66px;
+}
+
+.contactGrid {
+  margin-top: 18px;
+  display: grid;
+  grid-template-columns: 0.56fr 1fr;
+  gap: 12px;
+}
+
+.contactCard {
+  background: color-mix(in srgb, var(--surface) 70%, var(--surface-soft) 30%);
+}
+
+html[data-theme="dark"] .contactCard {
+  background: #111926;
+}
+
+.contactCardTitle {
+  margin: 0;
+  font-family: var(--font-sans), "Inter", system-ui, sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 1.1;
+  color: var(--text-strong);
+}
+
+.contactLine {
+  margin: 11px 0 0;
+  font-size: 0.83rem;
+}
+
+.contactLine strong {
+  color: var(--text-strong);
+  font-weight: 600;
+}
+
+@media (max-width: 1080px) {
+  .contactGrid {
+    grid-template-columns: 1fr;
+  }
+}

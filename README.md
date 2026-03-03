@@ -1,6 +1,6 @@
 # Mina Nord Portfolio Frontend
 
-Next.js portfolio site with light/dark theme support.
+Next.js App Router portfolio site with section-based components, typed content modules, CSS Modules, and a server-action contact form.
 
 ## Scripts
 
@@ -14,11 +14,17 @@ Next.js portfolio site with light/dark theme support.
 - Next.js 16 (App Router)
 - React 19
 - TypeScript
-- Plain CSS (`src/app/globals.css`)
+- CSS Modules + shared design tokens
+- Server Actions + Zod validation
 
 ## Project Structure
 
-- `src/app/page.tsx` - main portfolio page
-- `src/app/globals.css` - global styles and theme tokens
-- `src/app/layout.tsx` - root layout and font loading
-- `public/image.png` - hero media image
+- `src/app/page.tsx` - composition-only home page
+- `src/app/actions/contact.ts` - contact server action
+- `src/components/sections/*` - section components and local styles
+- `src/components/layout/SiteHeader.tsx` - sticky header and theme toggle
+- `src/components/forms/ContactForm.tsx` - client form with action state
+- `src/content/*` - typed section content
+- `src/lib/types/*` - content and form contracts
+- `src/lib/validation/contactSchema.ts` - Zod schema
+- `src/lib/contact/*` - pluggable contact provider

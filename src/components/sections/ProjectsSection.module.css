@@ -1,0 +1,50 @@
+.projectGrid {
+  margin-top: 24px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.projectCard {
+  box-shadow: var(--shadow);
+}
+
+.projectThumb {
+  position: relative;
+  height: 194px;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid var(--border-soft);
+  background: color-mix(in srgb, var(--surface-warm) 52%, var(--surface) 48%);
+}
+
+html[data-theme="dark"] .projectThumb {
+  background: #212f44;
+  border-color: #2c3a53;
+}
+
+.projectThumb img {
+  object-fit: cover;
+}
+
+.meta {
+  margin: 12px 0 6px;
+  color: color-mix(in srgb, var(--accent-green) 82%, var(--text-soft) 18%);
+  font-size: 0.63rem;
+  line-height: 1.2;
+}
+
+.cardTitle {
+  margin: 0;
+  font-family: var(--font-display), "Fraunces", serif;
+  font-size: 1.85rem;
+  line-height: 1.05;
+  letter-spacing: -0.015em;
+  color: var(--text-strong);
+}
+
+@media (max-width: 1080px) {
+  .projectGrid {
+    grid-template-columns: 1fr;
+  }
+}

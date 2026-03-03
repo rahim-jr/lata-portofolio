@@ -1,0 +1,140 @@
+.heroShell {
+  background: #faf8f5;
+}
+
+html[data-theme="dark"] .heroShell {
+  background: #0b0f14;
+}
+
+.heroContainer {
+  width: min(1240px, calc(100% - 128px));
+  min-height: 700px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  display: flex;
+  align-items: center;
+}
+
+.heroRow {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 56px;
+}
+
+.heroContent {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 640px;
+}
+
+.eyebrow {
+  margin: 0;
+  font-size: 0.7rem;
+  letter-spacing: 0.18em;
+  font-weight: 600;
+  color: #5b8def;
+  text-transform: uppercase;
+}
+
+html[data-theme="dark"] .eyebrow {
+  color: #9fafff;
+}
+
+.label {
+  margin: -10px 0 0;
+  font-size: 0.7rem;
+  letter-spacing: 0.15em;
+  font-weight: 500;
+  color: color-mix(in srgb, var(--accent-green) 65%, var(--text-soft) 35%);
+  text-transform: uppercase;
+}
+
+html[data-theme="dark"] .label {
+  color: #8fc3a6;
+}
+
+.heroTitle {
+  margin: 0;
+  font-family: var(--font-display), "Fraunces", serif;
+  font-size: clamp(2.15rem, 1.3rem + 2.35vw, 4.25rem);
+  line-height: 1.02;
+  letter-spacing: -0.025em;
+  color: var(--text-strong);
+  max-width: 13.2ch;
+}
+
+.heroCopy {
+  margin: 0;
+  color: var(--text-muted);
+  max-width: 56ch;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.ctaRow {
+  margin-top: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.heroMedia {
+  position: relative;
+  width: 520px;
+  height: 420px;
+  flex: 0 0 auto;
+  border-radius: 24px;
+  overflow: hidden;
+  border: 1px solid var(--border-soft);
+  box-shadow: 0 16px 34px rgba(31, 41, 55, 0.14);
+  background: linear-gradient(140deg, #85ace6, #d475b8);
+}
+
+.heroMedia img {
+  object-fit: cover;
+  object-position: center;
+}
+
+html[data-theme="dark"] .heroMedia {
+  border-color: #304051;
+  box-shadow: 0 18px 36px rgba(0, 0, 0, 0.4);
+}
+
+@media (max-width: 1080px) {
+  .heroContainer {
+    width: min(1240px, calc(100% - 72px));
+    min-height: auto;
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+
+  .heroRow {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+  }
+
+  .heroMedia {
+    width: min(520px, 100%);
+    height: auto;
+    aspect-ratio: 52 / 42;
+  }
+}
+
+@media (max-width: 760px) {
+  .heroContainer {
+    width: min(1240px, calc(100% - 48px));
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+
+  .heroContent {
+    gap: 18px;
+  }
+
+  .heroTitle {
+    max-width: 100%;
+  }
+}

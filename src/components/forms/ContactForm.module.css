@@ -1,0 +1,80 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.fieldGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.label {
+  color: var(--text-strong);
+  font-size: 0.78rem;
+  font-weight: 600;
+}
+
+.input,
+.textarea {
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid var(--border-soft);
+  background: color-mix(in srgb, var(--surface-soft) 84%, transparent);
+  color: var(--text);
+  padding: 10px 12px;
+  font: inherit;
+  font-size: 0.78rem;
+}
+
+html[data-theme="dark"] .input,
+html[data-theme="dark"] .textarea {
+  background: #0f141b;
+  border-color: #2c3846;
+}
+
+.textarea {
+  min-height: 112px;
+  resize: vertical;
+}
+
+.input::placeholder,
+.textarea::placeholder {
+  color: var(--text-soft);
+}
+
+.errorText {
+  margin: 0;
+  color: #d14343;
+  font-size: 0.72rem;
+}
+
+.statusMessage {
+  margin: 2px 0 0;
+  font-size: 0.76rem;
+}
+
+.statusSuccess {
+  color: #2f8651;
+}
+
+.statusError {
+  color: #b13a3a;
+}
+
+html[data-theme="dark"] .statusSuccess {
+  color: #7cc79a;
+}
+
+html[data-theme="dark"] .statusError {
+  color: #f19090;
+}
+
+.honeypot {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}

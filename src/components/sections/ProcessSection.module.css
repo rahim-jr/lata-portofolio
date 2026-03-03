@@ -1,0 +1,109 @@
+.gridTwo {
+  margin-top: 18px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.cardTitle {
+  margin: 0;
+  font-family: var(--font-display), "Fraunces", serif;
+  font-size: 1.85rem;
+  line-height: 1.05;
+  letter-spacing: -0.015em;
+  color: var(--text-strong);
+}
+
+.processShell {
+  margin-top: 16px;
+}
+
+.processRow {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.processStep {
+  min-height: 62px;
+  border-radius: 9px;
+  background: var(--surface-warm);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 8px 10px;
+  border: 1px solid color-mix(in srgb, var(--border) 68%, #ffffff 32%);
+}
+
+.stepIndex {
+  font-family: var(--font-mono), "IBM Plex Mono", ui-monospace, monospace;
+  font-size: 0.63rem;
+  color: #64748b;
+}
+
+.stepName {
+  margin-top: 4px;
+  color: #1f2937;
+  font-size: 0.72rem;
+  font-weight: 500;
+}
+
+html[data-theme="dark"] .stepName {
+  color: #e6edf7;
+}
+
+.subsectionLabel {
+  margin: 14px 0 0;
+  font-family: var(--font-display), "Fraunces", serif;
+  font-size: 1.7rem;
+  color: var(--text-strong);
+}
+
+.testimonialGrid {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.testimonialCard {
+  min-height: 148px;
+}
+
+.quote {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 0.74rem;
+  line-height: 1.6;
+}
+
+.author {
+  margin: 10px 0 0;
+  color: var(--text-strong);
+  font-size: 0.72rem;
+  font-weight: 600;
+}
+
+.authorRole {
+  margin: 3px 0 0;
+  color: var(--text-soft);
+  font-size: 0.66rem;
+}
+
+@media (max-width: 1080px) {
+  .gridTwo,
+  .testimonialGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .processRow {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 760px) {
+  .processRow {
+    grid-template-columns: 1fr;
+  }
+}
