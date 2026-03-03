@@ -1,31 +1,35 @@
 .form {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 8px;
 }
 
 .fieldGroup {
+  position: relative;
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 0;
 }
 
 .label {
-  color: var(--text-strong);
-  font-size: 0.78rem;
-  font-weight: 600;
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
 }
 
 .input,
 .textarea {
   width: 100%;
-  border-radius: 10px;
+  border-radius: 9px;
   border: 1px solid var(--border-soft);
-  background: color-mix(in srgb, var(--surface-soft) 84%, transparent);
+  background: color-mix(in srgb, var(--surface-soft) 88%, transparent);
   color: var(--text);
-  padding: 10px 12px;
+  padding: 9px 12px;
   font: inherit;
-  font-size: 0.78rem;
+  font-size: 0.86rem;
+  line-height: 1.4;
 }
 
 html[data-theme="dark"] .input,
@@ -35,24 +39,25 @@ html[data-theme="dark"] .textarea {
 }
 
 .textarea {
-  min-height: 112px;
+  min-height: 102px;
   resize: vertical;
 }
 
 .input::placeholder,
 .textarea::placeholder {
   color: var(--text-soft);
+  opacity: 1;
 }
 
 .errorText {
-  margin: 0;
+  margin: 4px 0 0;
   color: #d14343;
-  font-size: 0.72rem;
+  font-size: 0.8rem;
 }
 
 .statusMessage {
-  margin: 2px 0 0;
-  font-size: 0.76rem;
+  margin: 4px 0 0;
+  font-size: 0.82rem;
 }
 
 .statusSuccess {
@@ -69,6 +74,11 @@ html[data-theme="dark"] .textarea {
   width: 1px;
   height: 1px;
   overflow: hidden;
+}
+
+.sendButton {
+  margin-top: 5px;
+  min-height: 34px;
 }
 
 html[data-theme="dark"] .statusSuccess {

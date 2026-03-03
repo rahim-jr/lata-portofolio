@@ -1,5 +1,5 @@
 .gridTwo {
-  margin-top: 18px;
+  margin-top: 16px;
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 16px;
@@ -8,29 +8,29 @@
 .cardTitle {
   margin: 0;
   font-family: var(--font-display), "Fraunces", serif;
-  font-size: 1.85rem;
-  line-height: 1.05;
+  font-size: 1.92rem;
+  line-height: 1.06;
   letter-spacing: -0.015em;
   color: var(--text-strong);
 }
 
 .mutedSmall {
-  margin-top: 12px;
-  font-size: 0.77rem;
+  margin-top: 11px;
+  font-size: 0.86rem;
   color: var(--text-muted);
   line-height: 1.65;
 }
 
 .timeline {
-  margin-top: 8px;
+  margin-top: 6px;
   display: grid;
 }
 
 .timelineRow {
   display: grid;
-  grid-template-columns: 86px 1fr;
+  grid-template-columns: 72px 1fr;
   gap: 12px;
-  padding: 11px 0;
+  padding: 10px 0;
   border-top: 1px solid var(--border-soft);
 }
 
@@ -41,14 +41,14 @@
 
 .timelineYear {
   font-family: var(--font-mono), "IBM Plex Mono", ui-monospace, monospace;
-  font-size: 0.69rem;
+  font-size: 0.76rem;
   color: color-mix(in srgb, var(--accent-green) 80%, var(--text-soft) 20%);
 }
 
 .timelineCopy {
   margin: 0;
   color: var(--text-muted);
-  font-size: 0.77rem;
+  font-size: 0.86rem;
   line-height: 1.55;
 }
 

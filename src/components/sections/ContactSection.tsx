@@ -104,7 +104,7 @@ export function ContactSection() {
           {contactContent.links.map((link) => (
             <div key={link.label} className={styles.contactLine}>
               {link.href ? (
-                <a href={link.href} target="_blank" rel="noreferrer" className={styles.contactLink}>
+                <a href={link.href} target="_blank" rel="noopener noreferrer" className={styles.contactLink}>
                   <span className={`${styles.contactIcon} ${iconToneClassByLabel[link.label.toLowerCase()] ?? ""}`}>
                     <ContactLinkIcon label={link.label} />
                   </span>

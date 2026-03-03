@@ -1,90 +1,111 @@
 .contactGap {
-  padding-bottom: 74px;
+  padding-bottom: 70px;
+}
+
+.contactGap :global(.sectionEyebrow) {
+  color: color-mix(in srgb, var(--text-soft) 82%, var(--accent-green) 18%);
+}
+
+.contactGap :global(.sectionTitle) {
+  font-family: var(--font-sans), sans-serif;
+  font-size: clamp(2.1rem, 1.3rem + 2.05vw, 3.35rem);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.09;
+  max-width: 17ch;
+}
+
+.contactGap :global(.sectionSubtitle) {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  max-width: 94ch;
+  line-height: 1.62;
 }
 
 .responseBadge {
-  margin: 15px 0 0;
+  margin: 14px 0 0;
   width: fit-content;
   display: inline-flex;
   align-items: center;
-  gap: 9px;
-  border: 1px solid #d3e5d8;
+  gap: 7px;
+  border: 1px solid #d5e3d9;
   border-radius: 999px;
-  padding: 7px 13px;
-  background: #ecf6ef;
-  color: #4c6659;
-  font-size: 0.92rem;
+  padding: 5px 10px;
+  background: #edf5ef;
+  color: #4d6759;
+  font-size: 0.78rem;
   font-weight: 600;
   line-height: 1;
 }
 
 .responseDot {
-  width: 8px;
-  height: 8px;
+  width: 6px;
+  height: 6px;
   border-radius: 999px;
   background: #77a68f;
 }
 
 .contactGrid {
-  margin-top: 26px;
+  margin-top: 24px;
   display: grid;
-  grid-template-columns: minmax(260px, 0.5fr) minmax(0, 1fr);
+  grid-template-columns: minmax(280px, 0.42fr) minmax(0, 1fr);
   gap: 20px;
   align-items: stretch;
 }
 
 .contactCard {
-  padding: 26px;
-  border-radius: 18px;
-  border-color: #d7dfec;
-  background: color-mix(in srgb, #ffffff 74%, #f3f6fc 26%);
+  padding: 16px;
+  border-radius: 12px;
+  border-color: #d5ddea;
+  background: color-mix(in srgb, #ffffff 80%, #f3f6fc 20%);
 }
 
 html[data-theme="dark"] .contactCard {
-  border-color: #203149;
-  background: color-mix(in srgb, #09192a 75%, #0f1727 25%);
+  border-color: #1f3550;
+  background: color-mix(in srgb, #0b1b2e 80%, #10192a 20%);
 }
 
 .contactCardTitle {
   margin: 0;
-  font-family: var(--font-display), "Fraunces", serif;
+  font-family: var(--font-sans), sans-serif;
   font-weight: 700;
-  font-size: 1.85rem;
-  line-height: 1.05;
-  letter-spacing: -0.015em;
+  font-size: 2rem;
+  line-height: 1.03;
+  letter-spacing: -0.02em;
   color: var(--text-strong);
 }
 
 .contactCardSummary {
-  margin: 10px 0 0;
+  margin: 8px 0 0;
   color: var(--text-muted);
-  line-height: 1.65;
-  font-size: 0.84rem;
+  line-height: 1.58;
+  font-size: 0.87rem;
 }
 
 .contactLine {
-  margin-top: 10px;
+  margin-top: 8px;
 }
 
 .contactLine:first-of-type {
-  margin-top: 15px;
+  margin-top: 11px;
 }
 
 .contactLink {
   width: 100%;
-  min-height: 46px;
+  min-height: 32px;
   display: inline-flex;
   align-items: center;
-  gap: 12px;
-  border-radius: 12px;
+  gap: 8px;
+  border-radius: 8px;
   border: 1px solid #d6ddea;
-  background: #f9fbff;
-  padding: 10px 13px;
+  background: #f8fbff;
+  padding: 7px 9px;
   text-decoration: none;
   color: #1f2c3f;
-  font-size: 1rem;
-  font-weight: 500;
+  font-size: 0.84rem;
+  font-weight: 600;
   line-height: 1.2;
+  word-break: break-word;
   transition: border-color 180ms ease, background-color 180ms ease, transform 180ms ease;
 }
 
@@ -95,8 +116,8 @@ html[data-theme="dark"] .contactCard {
 }
 
 .contactIcon {
-  width: 20px;
-  height: 20px;
+  width: 16px;
+  height: 16px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -105,8 +126,8 @@ html[data-theme="dark"] .contactCard {
 }
 
 .contactIconSvg {
-  width: 19px;
-  height: 19px;
+  width: 14px;
+  height: 14px;
 }
 
 .contactIconEmail {
@@ -126,7 +147,7 @@ html[data-theme="dark"] .contactCard {
 }
 
 html[data-theme="dark"] .responseBadge {
-  border-color: #2f5b4a;
+  border-color: #2a5c4a;
   background: #0f2b21;
   color: #b0d2c4;
 }
@@ -158,7 +179,7 @@ html[data-theme="dark"] .contactLink:hover {
   }
 
   .responseBadge {
-    font-size: 0.82rem;
+    font-size: 0.74rem;
     padding: 6px 11px;
   }
 
@@ -168,16 +189,21 @@ html[data-theme="dark"] .contactLink:hover {
   }
 
   .contactCardTitle {
-    font-size: 1.65rem;
+    font-size: 1.74rem;
   }
 
   .contactCardSummary {
-    font-size: 0.8rem;
+    font-size: 0.86rem;
   }
 
   .contactLink {
     min-height: 44px;
-    font-size: 0.96rem;
+    font-size: 0.9rem;
     padding: 9px 11px;
+  }
+
+  .contactIconSvg {
+    width: 18px;
+    height: 18px;
   }
 }

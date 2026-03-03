@@ -8,8 +8,11 @@ import { ProjectsSection } from "@/components/sections/ProjectsSection";
 export default function HomePage() {
   return (
     <div className="pageRoot">
+      <a className="skipLink" href="#main-content">
+        Skip to main content
+      </a>
       <SiteHeader />
-      <main>
+      <main id="main-content">
         <HeroSection />
         <ProjectsSection />
         <AboutSection />

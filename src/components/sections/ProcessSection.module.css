@@ -1,5 +1,5 @@
 .gridTwo {
-  margin-top: 18px;
+  margin-top: 16px;
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 16px;
@@ -8,8 +8,8 @@
 .cardTitle {
   margin: 0;
   font-family: var(--font-display), "Fraunces", serif;
-  font-size: 1.85rem;
-  line-height: 1.05;
+  font-size: 1.92rem;
+  line-height: 1.06;
   letter-spacing: -0.015em;
   color: var(--text-strong);
 }
@@ -19,14 +19,14 @@
 }
 
 .processRow {
-  margin-top: 10px;
+  margin-top: 11px;
   display: grid;
   grid-template-columns: repeat(5, minmax(0, 1fr));
   gap: 10px;
 }
 
 .processStep {
-  min-height: 62px;
+  min-height: 58px;
   border-radius: 9px;
   background: var(--surface-warm);
   display: flex;
@@ -38,15 +38,15 @@
 
 .stepIndex {
   font-family: var(--font-mono), "IBM Plex Mono", ui-monospace, monospace;
-  font-size: 0.63rem;
-  color: #64748b;
+  font-size: 0.72rem;
+  color: var(--text-soft);
 }
 
 .stepName {
   margin-top: 4px;
-  color: #1f2937;
-  font-size: 0.72rem;
-  font-weight: 500;
+  color: color-mix(in srgb, var(--text-strong) 90%, var(--text-muted) 10%);
+  font-size: 0.84rem;
+  font-weight: 600;
 }
 
 html[data-theme="dark"] .stepName {
@@ -54,41 +54,41 @@ html[data-theme="dark"] .stepName {
 }
 
 .subsectionLabel {
-  margin: 14px 0 0;
+  margin: 12px 0 0;
   font-family: var(--font-display), "Fraunces", serif;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   color: var(--text-strong);
 }
 
 .testimonialGrid {
-  margin-top: 10px;
+  margin-top: 9px;
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 10px;
 }
 
 .testimonialCard {
-  min-height: 148px;
+  min-height: 140px;
 }
 
 .quote {
   margin: 0;
   color: var(--text-muted);
-  font-size: 0.74rem;
+  font-size: 0.86rem;
   line-height: 1.6;
 }
 
 .author {
-  margin: 10px 0 0;
+  margin: 8px 0 0;
   color: var(--text-strong);
-  font-size: 0.72rem;
+  font-size: 0.8rem;
   font-weight: 600;
 }
 
 .authorRole {
   margin: 3px 0 0;
   color: var(--text-soft);
-  font-size: 0.66rem;
+  font-size: 0.75rem;
 }
 
 @media (max-width: 1080px) {

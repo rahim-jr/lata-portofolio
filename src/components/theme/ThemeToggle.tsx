@@ -7,7 +7,7 @@ type Theme = "light" | "dark";
 
 function resolveInitialTheme(): Theme {
   if (typeof window === "undefined") {
-    return "dark";
+    return "light";
   }
 
   const persistedTheme = window.localStorage.getItem(THEME_STORAGE_KEY);
@@ -15,7 +15,7 @@ function resolveInitialTheme(): Theme {
     return persistedTheme;
   }
 
-  return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+  return "light";
 }
 
 function applyTheme(theme: Theme): void {

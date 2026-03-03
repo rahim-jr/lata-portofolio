@@ -1,16 +1,16 @@
 .heroShell {
-  background: #faf8f5;
+  background: color-mix(in srgb, var(--bg) 94%, var(--surface) 6%);
 }
 
 html[data-theme="dark"] .heroShell {
-  background: #0b0f14;
+  background: #070f1a;
 }
 
 .heroContainer {
-  width: min(1240px, calc(100% - 128px));
-  min-height: 700px;
-  padding-top: 80px;
-  padding-bottom: 80px;
+  width: min(1240px, calc(100% - 84px));
+  min-height: 640px;
+  padding-top: 78px;
+  padding-bottom: 78px;
   display: flex;
   align-items: center;
 }
@@ -19,21 +19,21 @@ html[data-theme="dark"] .heroShell {
   width: 100%;
   display: flex;
   align-items: center;
-  gap: 56px;
+  gap: 66px;
 }
 
 .heroContent {
   display: flex;
   flex-direction: column;
-  gap: 24px;
-  max-width: 640px;
+  gap: 14px;
+  max-width: 612px;
 }
 
 .eyebrow {
   margin: 0;
-  font-size: 0.7rem;
+  font-size: 0.68rem;
   letter-spacing: 0.18em;
-  font-weight: 600;
+  font-weight: 700;
   color: #5b8def;
   text-transform: uppercase;
 }
@@ -43,10 +43,10 @@ html[data-theme="dark"] .eyebrow {
 }
 
 .label {
-  margin: -10px 0 0;
-  font-size: 0.7rem;
+  margin: 0;
+  font-size: 0.67rem;
   letter-spacing: 0.15em;
-  font-weight: 500;
+  font-weight: 700;
   color: color-mix(in srgb, var(--accent-green) 65%, var(--text-soft) 35%);
   text-transform: uppercase;
 }
@@ -58,37 +58,39 @@ html[data-theme="dark"] .label {
 .heroTitle {
   margin: 0;
   font-family: var(--font-display), "Fraunces", serif;
-  font-size: clamp(2.15rem, 1.3rem + 2.35vw, 4.25rem);
-  line-height: 1.02;
-  letter-spacing: -0.025em;
+  font-size: clamp(2.28rem, 1.4rem + 2.24vw, 4.15rem);
+  line-height: 1.05;
+  letter-spacing: -0.02em;
   color: var(--text-strong);
-  max-width: 13.2ch;
+  max-width: 12.8ch;
+  text-wrap: balance;
 }
 
 .heroCopy {
   margin: 0;
   color: var(--text-muted);
-  max-width: 56ch;
-  font-size: 1rem;
-  line-height: 1.7;
+  max-width: 58ch;
+  font-size: 0.88rem;
+  line-height: 1.72;
+  text-wrap: pretty;
 }
 
 .ctaRow {
-  margin-top: 24px;
+  margin-top: 8px;
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 9px;
 }
 
 .heroMedia {
   position: relative;
-  width: 520px;
-  height: 420px;
+  width: 532px;
+  height: 372px;
   flex: 0 0 auto;
-  border-radius: 24px;
+  border-radius: 20px;
   overflow: hidden;
   border: 1px solid var(--border-soft);
-  box-shadow: 0 16px 34px rgba(31, 41, 55, 0.14);
+  box-shadow: 0 14px 30px rgba(31, 41, 55, 0.14);
   background: linear-gradient(140deg, #85ace6, #d475b8);
 }
 
@@ -99,12 +101,12 @@ html[data-theme="dark"] .label {
 
 html[data-theme="dark"] .heroMedia {
   border-color: #304051;
-  box-shadow: 0 18px 36px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 20px 38px rgba(0, 0, 0, 0.44);
 }
 
 @media (max-width: 1080px) {
   .heroContainer {
-    width: min(1240px, calc(100% - 72px));
+    width: min(1240px, calc(100% - 56px));
     min-height: auto;
     padding-top: 64px;
     padding-bottom: 64px;
@@ -131,7 +133,7 @@ html[data-theme="dark"] .heroMedia {
   }
 
   .heroContent {
-    gap: 18px;
+    gap: 16px;
   }
 
   .heroTitle {
