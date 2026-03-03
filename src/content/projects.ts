@@ -9,7 +9,7 @@ export const projectsContent: ProjectsContent = {
       title: "LedgerFlow Platform Redesign",
       summary:
         "A complete product refresh that improved task completion and clarified complex finance workflows for teams.",
-      thumbnail: "/image.png",
+      thumbnail: "/",
       ctaLabel: "View Case Study",
     },
     {
@@ -18,7 +18,7 @@ export const projectsContent: ProjectsContent = {
       title: "NordPanel Analytics Workspace",
       summary:
         "An insight-first interface that streamlined reporting and helped teams move from raw metrics to decisions faster.",
-      thumbnail: "/image.png",
+      thumbnail: "/",
       ctaLabel: "View Case Study",
     },
   ],
