@@ -63,18 +63,18 @@ html[data-theme="dark"] .textarea {
   color: #b13a3a;
 }
 
-html[data-theme="dark"] .statusSuccess {
-  color: #7cc79a;
-}
-
-html[data-theme="dark"] .statusError {
-  color: #f19090;
-}
-
 .honeypot {
   position: absolute;
   left: -9999px;
   width: 1px;
   height: 1px;
   overflow: hidden;
+}
+
+html[data-theme="dark"] .statusSuccess {
+  color: #7cc79a;
+}
+
+html[data-theme="dark"] .statusError {
+  color: #f19090;
 }

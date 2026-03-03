@@ -5,6 +5,7 @@ export const contactContent: ContactContent = {
   title: "Let's Build Something Meaningful Together",
   subtitle:
     "I'm actively looking for junior UX roles and internships. If you'd like to collaborate, mentor, or discuss design opportunities, I'd love to connect.",
+  responseBadge: "Replies within 24 hours",
   cardTitle: "Say hello",
   cardSummary: "Open to internships, freelance collaboration, and thoughtful UX conversations.",
   links: [

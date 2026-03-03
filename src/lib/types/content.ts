@@ -47,6 +47,7 @@ export interface ProjectsContent {
 }
 
 export interface AboutTimelineItem {
+  id: string;
   period: string;
   description: string;
 }
@@ -95,6 +96,7 @@ export interface ContactContent {
   eyebrow: string;
   title: string;
   subtitle: string;
+  responseBadge: string;
   cardTitle: string;
   cardSummary: string;
   links: ContactLinkItem[];
